@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>customer churn prediction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">DATA SCIENCE PROJECTS</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="ml.html">Home</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/akshay-jain-b21199204" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href=" https://github.com/akshay1290" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>Predicting Customer Churn in a Telecom Company</h1>
+									
+								</header>
+								<div class="image main"><img src="images/ccp.jpg" alt="" /></div>
+                                <h2>Project Overview</h2>
+								<p>
+                                    The "Predicting Customer Churn in a Telecom Company" project is aimed at leveraging data analytics and machine learning techniques to address the critical issue of customer churn within our telecom organization. Churn refers to the phenomenon where customers discontinue their subscriptions or services, resulting in revenue loss and reduced customer base. By proactively identifying potential churners and implementing targeted retention strategies, this project aims to improve customer retention rates, enhance customer satisfaction, and maintain a competitive edge in the telecommunications market.</p>
+                                    <h2>About the dataset</h2>
+								<p>
+                                    The dataset you've provided appears to be a tabular dataset with 7043 rows and 21 columns. Each row represents a customer, and each column represents a different attribute or feature related to those customers. This dataset is used for predicting customer churn in a telecom company.</br>
+
+<b>1.customerID:</b> A unique identifier for each customer. This column is of type "object."</br>
+
+<b>2.gender: </b>The gender of the customer (e.g., male or female). This column is of type "object."</br>
+
+<b>3.SeniorCitizen:</b> An indicator of whether the customer is a senior citizen (1 for yes, 0 for no). This column is of type "int64."</br>
+
+<b>4.Partner: </b>An indicator of whether the customer has a partner (e.g., "Yes" or "No"). This column is of type "object."</br>
+
+<b>5.Dependents:</b> An indicator of whether the customer has dependents (e.g., "Yes" or "No"). This column is of type "object."</br>
+
+<b>6.tenure: </b>The number of months the customer has been with the telecom company. This column is of type "int64."</br>
+
+<b>7.PhoneService:</b> An indicator of whether the customer has phone service (e.g., "Yes" or "No"). This column is of type "object."</br>
+
+<b>8.MultipleLines:</b> An indicator of whether the customer has multiple phone lines (e.g., "Yes," "No," or "No phone service"). This column is of type "object."</br>
+
+<b>9.InternetService:</b> The type of internet service subscribed by the customer (e.g., DSL, Fiber optic, No internet service). This column is of type "object."</br>
+
+<b>10.OnlineSecurity: </b>An indicator of whether the customer has online security (e.g., "Yes," "No," or "No internet service"). This column is of type "object."</br>
+
+<b>11.OnlineBackup:</b> An indicator of whether the customer has online backup (e.g., "Yes," "No," or "No internet service"). This column is of type "object."</br>
+
+<b>12.DeviceProtection:</b> An indicator of whether the customer has device protection (e.g., "Yes," "No," or "No internet service"). This column is of type "object."</br>
+
+<b>13.TechSupport: </b>An indicator of whether the customer has tech support (e.g., "Yes," "No," or "No internet service"). This column is of type "object."</br>
+
+<b>14.StreamingTV:</b> An indicator of whether the customer has streaming TV (e.g., "Yes," "No," or "No internet service"). This column is of type "object."</br>
+
+<b>15.StreamingMovies:</b> An indicator of whether the customer has streaming movies (e.g., "Yes," "No," or "No internet service"). This column is of type "object."</br>
+
+<b>16.Contract:</b> The type of contract the customer has (e.g., month-to-month, one year, two years). This column is of type "object."</br>
+
+<b>17.PaperlessBilling:</b> An indicator of whether the customer receives paperless billing (e.g., "Yes" or "No"). This column is of type "object."</br>
+
+<b>18.PaymentMethod:</b> The payment method used by the customer (e.g., Electronic check, Mailed check, Bank transfer, Credit card). This column is of type "object."</br>
+
+<b>19.MonthlyCharges:</b> The monthly charges incurred by the customer. This column is of type "float64."</br>
+
+<b>20.TotalCharges:</b> The total charges incurred by the customer. This column is of type "object." It may need to be converted to a numerical type for analysis, as it likely represents a numeric value.</br>
+
+<b>21.Churn:</b> The target variable indicating whether the customer has churned (e.g., "Yes" or "No"). This column is of type "object."
+                                </p>
+                                    <h2>Project Objectives</h2>
+								<p><b>1.Early Churn Detection:</b> Develop a predictive model to identify potential churners as early as possible by analyzing historical customer data and behavior patterns.<br />
+
+                                    <b>2.Customer Retention Strategies:</b> Create personalized customer retention strategies based on the churn prediction model's insights, including incentives, promotions, and improved customer support.<br />
+                                    
+                                    <b>3.Revenue Loss Mitigation:</b> Minimize revenue losses by reducing customer churn through proactive interventions.<br />
+                                    
+                                        <b> 4.Data-Driven Decision-Making:</b> Establish a data-driven approach to decision-making within the organization, utilizing predictive analytics to guide customer retention efforts.<br />
+                                    
+                                            <b>5.Enhanced Customer Satisfaction:</b>Address underlying causes of churn to improve overall customer satisfaction and loyalty.<br />
+                                    
+                                                <b>6.Competitive Advantage:</b> Gain a competitive advantage by proactively retaining customers in a dynamic and competitive telecommunications market.<br />
+                                
+                                                    <b> 7.Continuous Improvement:</b> Build a framework for ongoing model refinement and improvement, adapting to changing customer behavior and market dynamics.<br />
+                                    
+                                                       <h2><b> Key Components:</b></h2> 
+                                    
+                                                            <b>* Data Collection and Preparation:</b> Gather and preprocess historical customer data, including customer profiles, usage patterns, billing information, and customer interactions.<br />
+                                                                <b>* Machine Learning Model Development:</b> Develop a robust churn prediction model using supervised machine learning techniques.<br />
+                                                                    <b>* Model Evaluation:</b> Assess the model's performance using relevant metrics and validation techniques.<br />
+                                                                        <b>* Customer Retention Strategies:</b> Translate model insights into actionable strategies for customer retention, personalized offers, and targeted communications.<br />
+                                                                            <b>* Deployment and Monitoring:</b> Implement the model in real-time or periodic monitoring systems to identify potential churners and trigger retention efforts.<br />
+                                                                                <b>* Reporting and Insights:</b> Provide actionable insights and recommendations to marketing and customer retention teams.<br />
+                                                                                    <b>* Continuous Improvement:</b> Establish processes for model updates and refinements based on evolving data and customer behavior.</p>
+
+                                                                                    <h2>Expected Outcomes</h2>
+                                                                                    <p>
+                                                                                        Reduced Churn Rates</br>
+                                                                                        Improved Customer Retention</br>
+                                                                                        Increased Revenue</br>
+                                                                                        Enhanced Customer Satisfaction</br>
+                                                                                        Data-Driven Decision-Making Culture</br>
+                                                                                        Competitive Advantage</br>
+                                                                                        Ongoing Model Improvement</p>
+
+                                                                                        <a href="notebooks/customer_churn.html" class="button">VIEW NOTEBOOK</a>
+                                                                                        <a href="fullstory1.html" class="button">DOWNLOAD DATASET</a>
+
+							</section>
+
+					</div>
+
+					<!-- Footer -->
+					<footer id="footer">
+					
+						
+						<section>
+							<h2>GET IN TOUCH</h2>
+							<h3>Phone</h3>
+							<p><a href="#">+91 9483104096</a></p>
+						
+							<h3>Email</h3>
+							<p><a href="#">akshayk.p46@gmail.com</a></p>
+					
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/akshay-jain-b21199204" class="icon brands fa-linkedin"><span class="label">linkedIn</span></a></li>
+								<li><a href=" https://github.com/akshay1290" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
